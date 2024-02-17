@@ -10,18 +10,26 @@
 <style>
 html {
     background-color:#1F2937;
+    
 }
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       width:auto;
+      opacity: 0.7;
     }
-   
+   .wrapper {
+    background-image: url("jason-canva-bg.png");
+   }
     button {
         background-color: #3882f6;
         color:#F9FAF8;
         padding: 15px;
+        border-radius: 15px;
+    }
+    button:hover {
+        cursor: pointer;
     }
     .container {
       background-color: #F9FAF8 ;
@@ -40,6 +48,8 @@ html {
     }
 
     ul {
+        margin-top: 0px;
+        padding-top: 40px;
         color: #F9FAF8;
         display: flex;
         flex-direction: row;
@@ -84,6 +94,10 @@ html {
       .container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minmax values for smaller screens */
       }
+.wrapper {
+    background-image: url("jason-canva-bg.png");
+}
+
       .image {
         display: grid;
         align-items: center;
@@ -113,9 +127,11 @@ html {
     @media screen and (min-width: 769px) {
         .image {
             position:relative;
-            width:600px;
-            left: 800px;
-            top: -100px;
+            width:590px;
+            height: 335px;
+            left: 740px;
+            top: -240px;
+            border-radius: 15px;
         }
     
         .awesome-hero {
@@ -146,11 +162,11 @@ html {
   </style>
    
 <body>
-  
+  <div class="wrapper">
     <header>
         <ul class="hero">
             <li> 
-                <img style="height:70px; width: 70px; border-radius: 50%;" src=",./jn-high-resolution-logo-transparent.png">
+                <img style="height:200px; width: 270px;" src="jn-high-resolution-logo-transparent.png">
             </li>
             <li>Education</li>
             <li>Projects</li>
@@ -164,14 +180,15 @@ html {
                 A Next.js/React Developer</h1>
             
                 <p class="hero-p">
-                    I can't say enough about the confidence that the structure and straightforward </p>
-                    <p class="hero-p">Guidance that the Odin Project combined with the Agile Learning Institute's </p>
-                    <p class="hero-p"> Methodology and references are giving me. I feel refreshed and motivated to press</p>
-                    <p class="hero-p"> Into the gut-wrenching part that is the javascript portion and come out on the other side a new developer!
+                    Next.js is a React framework for building full-stack web applications.  </p>
+                    <p class="hero-p">Under the hood, Next.js also abstracts and automatically configures tooling needed for React, like bundling, compiling, and more. </p>
+                    <p class="hero-p"> This allows you to focus on building your application instead of spending time with configuration.
+                        Whether you're an individual developer or part of a larger team, Next.js can help you build interactive, dynamic, and fast React applications.
                 </p>
-           <button>
-            Come & Get Some!
+        <a href="https://nextjs.org/docs"><button>
+           Next.js Documentation
            </button>
+        </a>
 
 
             </div>
@@ -180,7 +197,7 @@ html {
                 </div>
 
 
-
+            </div>
                 <div class="container">
                     <div>
                         <div class="item">

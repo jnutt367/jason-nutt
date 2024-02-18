@@ -12,16 +12,30 @@ html {
     background-color:#1F2937;
     
 }
-
+    .last {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        height: 500px;
+        background-color:  rgb(190, 184, 184);
+        color: black;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       width:auto;
-      opacity: 0.6;
+      opacity: 0.9;
+
     }
    .wrapper {
     background-image: url("jason-canva-bg.png");
+    width: 100%;
+    
+    
    }
     button {
         background-color: #3882f6;
@@ -87,17 +101,28 @@ html {
     top: 100px;
     margin-bottom: 100px;
 
+
    }
+
+   .quotes {
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+
     /* Media query for smaller screens */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 769px) {
 
         
       .container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minmax values for smaller screens */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values for smaller screens */
       }
 .wrapper {
     background-image: url("jason-canva-bg.png");
 }
+
 
       .image {
         display: grid;
@@ -108,6 +133,8 @@ html {
         left: -0px;
         position: relative;
         height: 300px;
+        top: 150px;
+        margin-bottom: 165px;
         
       }
       .hero {
@@ -126,20 +153,10 @@ html {
     }
 
     @media screen and (min-width: 769px) {
-        .image {
-            position:relative;
-            width:580px;
-            height: 335px;
-            left: 750px;
-            top: -331px;
-            border-radius: 15px;
-            border-radius: 0px 0px 0px 15px;
-        }
-    
+       
         .awesome-hero {
-                        left: 100px;
-                        top: 000px;
-
+                        
+            top: -75px;
         }
         .container {
             padding: 20px;
@@ -153,6 +170,12 @@ html {
             
 
         }
+
+        
+    .image {
+     margin-bottom: 0;
+     margin-top: 30px;
+    }
         .item {
             height: 220px; 
             width: 220px;
@@ -160,83 +183,119 @@ html {
         }
     }
 
-
-
-
+    @media screen and (min-width: 1024px) {
+    .image {
+        position:relative;
+        width:580px;
+        height: 335px;
+        left: 750px;
+        top: -432px;
+        border-radius: 15px;
+        border-radius: 0px 0px 0px 15px;
+        
+    }
+}
   </style>
    
 <body>
   <div class="wrapper">
-    <header>
-        <ul class="hero">
-            <li> 
-                <img style="height:200px; width: 270px;" src="jn-high-resolution-logo-transparent.png">
-            </li>
-            <li>Education</li>
-            <li>Projects</li>
-            <li>Experience</li>    
-        </ul>
-    </header>
+                                <header>
+                                    <ul class="hero">
+                                        <li> 
+                                            <img style="height:200px; width: 270px;" src="jn-high-resolution-logo-transparent.png">
+                                        </li>
+                                        <li>Education</li>
+                                        <li>Projects</li>
+                                        <li>Experience</li>    
+                                    </ul>
+                                </header>
 
        
-            <div class="awesome-hero">
-            <h1>Hi, I'm Jason <br>
-                A Next.js/React Developer</h1>
-            
-                <p class="hero-p">
-                    Next.js is a React framework for building full-stack web applications.  </p>
-                    <p class="hero-p">Under the hood, Next.js also abstracts and automatically configures tooling needed for React, like bundling, compiling, and more. </p>
-                    <p class="hero-p"> This allows you to focus on building your application instead of spending time with configuration.</p>
-                       
-                        <p class="hero-p"> Whether you're an individual developer or part of a larger team, Next.js can help you build interactive, dynamic, and fast React applications.
-                </p>
-        <a href="https://nextjs.org/docs"><button>
-           Next.js Documentation
-           </button>
-        </a>
+                     <div class="awesome-hero">
+                                    <h1>Hi, I'm Jason <br>
+                                        A Next.js/React Developer</h1>
+                                    
+                                        <p class="hero-p">
+                                            Next.js is a React framework for building full-stack web applications.  </p>
+                                            <p class="hero-p">Under the hood, Next.js also abstracts and automatically configures tooling needed for React, like bundling, compiling, and more. </p>
+                                            <p class="hero-p"> This allows you to focus on building your application instead of spending time with configuration.</p>
+                                            
+                                                <p class="hero-p"> Whether you're an individual developer or part of a larger team, Next.js can help you build interactive, dynamic, and fast React applications.
+                                        </p>
+                                <a href="https://nextjs.org/docs"><button>
+                                Next.js Documentation
+                                </button>
+                                </a>
 
 
-            </div>
+                    </div>
+               
+               
+               
+               
+               
                 <div>
-                    <iframe class="image" width="560" height="315" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV&autoplay=1&mute=1"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="image" width="100%" height="315" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV&autoplay=1&mute=1"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
 
-            </div>
-                <div class="container">
-                    <div>
-                        <div class="item">
-     <iframe width="auto-fit" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                           
+    </div>
+               
+    
+    
+            <div class="container">
+                       <div>
+                                <div class="item">
+                                      
+                                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     
+                                </div>
+                                 <p class="p">First Course</p>
                         </div>
-                        <p class="p">First Course</p>
-                    </div>
 
-                     <div>
-                    <div class="item courses">
-                        <iframe width="auto-fit" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div>
+                    
+                                 <div class="item">
+                                    
+                                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                    </div>
-                    <p class="p">Second Introductory Course</p>
-                </div>
+                        </div>
+                                 <p class="p">Second Introductory Course</p>
+                        </div>
 
-                    <div>
-                    <div class="item">
-                        <iframe width="auto-fit" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                        <div>
+                                <div class="item">
+                                     <iframe width="100%" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-                    </div>
-                    <p class="p">Paid Courses</p>
-                </div>
-                <div>
-                    <div class="item">
+                        </div>
+                                 <p class="p">Paid Courses</p>
+                         </div>
+               
+               
+                         <div>
+                                 <div class="item">
 
-                        <iframe width="auto-fit" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe width="100%" height="220" src="https://www.youtube.com/embed/0XKF7Ojclfk?si=Cvj_30w39IwNybQV"  title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                    </div>
-                    <p>Course Tutorials</p>
-                </div>
-                </div>
+                        </div>
+                               <p class="p">Course Tutorials</p>
+                        </div>
+
+
+              
+
+
+
+            </div>
+           
+            <q class="last">
+
+The text for this section will be meaningful after I find somethng that is sufficient for the subject and project!
+            </q>
 
 </body>
+               
+
 </html>

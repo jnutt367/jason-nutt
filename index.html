@@ -16,7 +16,6 @@ html {
         display: grid;
         align-items: center;
         justify-content: center;
-        justify-self: center;
         height: 500px;
         background-color:  rgb(190, 184, 184);
         color: black;
@@ -39,6 +38,8 @@ html {
    }
     button {
         background-color: #3882f6;
+        position: relative;
+        left: 300px;
         color:#F9FAF8;
         padding: 15px;
         border-radius: 15px;
@@ -75,8 +76,9 @@ html {
         color:#F9FAF8;
     }
     h1 {
-        color: #F9FAF8;
+        color: white;
     }
+ 
     .item {
         display: grid;
         align-items: center;
@@ -111,7 +113,21 @@ html {
     justify-content: center;
     text-align: center;
    }
+   .action {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #f0f0f0;
+    color: #f0f0f0;
+   }
 
+   .call {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 25px;
+    border-radius: 15px;
+   }
     /* Media query for smaller screens */
     @media screen and (max-width: 769px) {
 
@@ -289,11 +305,27 @@ html {
 
 
             </div>
-           
-            <q class="last">
 
-The text for this section will be meaningful after I find somethng that is sufficient for the subject and project!
-            </q>
+                      <p class="last">
+
+                       "The text for this section will be meaningful after I find somethng that is sufficient for the subject and project!
+                       <br>
+                       I can't wait to get to the next project but I will continuously re-iterate over any projects that need it as we go thorugh the Odin project!""
+                      </p>
+
+
+              <div class="action">
+                    <div class="call">
+                        <h1 class="footer-h1">
+                            It's call to action time!
+                            
+
+                        </h1>
+                        <p>Sign up to get all the begginner knowledge that I wish I had when I first started!</p>
+                        <a href="https://nextjs.org/docs"><button> Next.js Documentation</button></a>
+                    </div> 
+                    
+             </div>
 
 </body>
                
